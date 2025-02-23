@@ -1,0 +1,597 @@
+EMP/emp-checker-ggg-main/.gitattributes
+EMP/emp-checker-ggg-main/.gitignore
+EMP/emp-checker-ggg-main/.prettierrc.json
+EMP/emp-checker-ggg-main/gm-lib.js
+EMP/emp-checker-ggg-main/LICENSE
+EMP/emp-checker-ggg-main/Main_UserScript.user.js
+EMP/emp-checker-ggg-main/main.js
+EMP/emp-checker-ggg-main/post-scanner.js
+EMP/emp-checker-ggg-main/todo
+EMP/emp-checker-ggg-main/added-post-buttons/added-post-buttons-html.html
+EMP/emp-checker-ggg-main/added-post-buttons/added-post-buttons-style.css
+EMP/emp-checker-ggg-main/added-post-buttons/added-post-buttons.js
+EMP/emp-checker-ggg-main/main-menu/main-menu-html.html
+EMP/emp-checker-ggg-main/main-menu/main-menu-style.css
+EMP/emp-checker-ggg-main/main-menu/main-menu.js
+EMP/emp-checker-ggg-main/modal/modal-html.html
+EMP/emp-checker-ggg-main/modal/modal-settings-html.html
+EMP/emp-checker-ggg-main/modal/modal-style.css
+EMP/emp-checker-ggg-main/modal/modal.js
+EMP/emp-checker-ggg-main/progress-bar/progress-bar-html.html
+EMP/emp-checker-ggg-main/progress-bar/progress-bar-style.css
+EMP/emp-checker-ggg-main/progress-bar/progress-bar.js
+EMP/emp-checker-ggg-main/sandbox/sandbox-html.html
+EMP/emp-checker-ggg-main/sandbox/sandbox.js
+EMP/emp-checker-ggg-main/.gitattributes
+EMP/emp-checker-ggg-main/.gitignore
+EMP/emp-checker-ggg-main/.prettierrc.json
+EMP/emp-checker-ggg-main/gm-lib.js
+EMP/emp-checker-ggg-main/LICENSE
+EMP/emp-checker-ggg-main/Main_UserScript.user.js
+EMP/emp-checker-ggg-main/main.js
+EMP/emp-checker-ggg-main/post-scanner.js
+EMP/emp-checker-ggg-main/todo
+EMP/emp-checker-ggg-main/added-post-buttons/added-post-buttons-html.html
+EMP/emp-checker-ggg-main/added-post-buttons/added-post-buttons-style.css
+EMP/emp-checker-ggg-main/added-post-buttons/added-post-buttons.js
+EMP/emp-checker-ggg-main/main-menu/main-menu-html.html
+EMP/emp-checker-ggg-main/main-menu/main-menu-style.css
+EMP/emp-checker-ggg-main/main-menu/main-menu.js
+EMP/emp-checker-ggg-main/modal/modal-html.html
+EMP/emp-checker-ggg-main/modal/modal-settings-html.html
+EMP/emp-checker-ggg-main/modal/modal-style.css
+EMP/emp-checker-ggg-main/modal/modal.js
+EMP/emp-checker-ggg-main/progress-bar/progress-bar-html.html
+EMP/emp-checker-ggg-main/progress-bar/progress-bar-style.css
+EMP/emp-checker-ggg-main/progress-bar/progress-bar.js
+EMP/emp-checker-ggg-main/sandbox/sandbox-html.html
+EMP/emp-checker-ggg-main/sandbox/sandbox.js
+EMP/emp-checker-ggg-main/.gitattributes
+EMP/emp-checker-ggg-main/.gitignore
+EMP/emp-checker-ggg-main/.prettierrc.json
+EMP/emp-checker-ggg-main/gm-lib.js
+EMP/emp-checker-ggg-main/LICENSE
+EMP/emp-checker-ggg-main/Main_UserScript.user.js
+EMP/emp-checker-ggg-main/main.js
+EMP/emp-checker-ggg-main/post-scanner.js
+EMP/emp-checker-ggg-main/todo
+EMP/emp-checker-ggg-main/added-post-buttons/added-post-buttons-html.html
+EMP/emp-checker-ggg-main/added-post-buttons/added-post-buttons-style.css
+EMP/emp-checker-ggg-main/added-post-buttons/added-post-buttons.js
+EMP/emp-checker-ggg-main/main-menu/main-menu-html.html
+EMP/emp-checker-ggg-main/main-menu/main-menu-style.css
+EMP/emp-checker-ggg-main/main-menu/main-menu.js
+EMP/emp-checker-ggg-main/modal/modal-html.html
+EMP/emp-checker-ggg-main/modal/modal-settings-html.html
+EMP/emp-checker-ggg-main/modal/modal-style.css
+EMP/emp-checker-ggg-main/modal/modal.js
+EMP/emp-checker-ggg-main/progress-bar/progress-bar-html.html
+EMP/emp-checker-ggg-main/progress-bar/progress-bar-style.css
+EMP/emp-checker-ggg-main/progress-bar/progress-bar.js
+EMP/emp-checker-ggg-main/sandbox/sandbox-html.html
+EMP/emp-checker-ggg-main/sandbox/sandbox.js
+EMP/emp-checker-ggg-main/.gitattributes
+EMP/emp-checker-ggg-main/.gitignore
+EMP/emp-checker-ggg-main/.prettierrc.json
+EMP/emp-checker-ggg-main/gm-lib.js
+EMP/emp-checker-ggg-main/LICENSE
+EMP/emp-checker-ggg-main/Main_UserScript.user.js
+EMP/emp-checker-ggg-main/main.js
+EMP/emp-checker-ggg-main/post-scanner.js
+EMP/emp-checker-ggg-main/todo
+EMP/emp-checker-ggg-main/added-post-buttons/added-post-buttons-html.html
+EMP/emp-checker-ggg-main/added-post-buttons/added-post-buttons-style.css
+EMP/emp-checker-ggg-main/added-post-buttons/added-post-buttons.js
+EMP/emp-checker-ggg-main/main-menu/main-menu-html.html
+EMP/emp-checker-ggg-main/main-menu/main-menu-style.css
+EMP/emp-checker-ggg-main/main-menu/main-menu.js
+EMP/emp-checker-ggg-main/modal/modal-html.html
+EMP/emp-checker-ggg-main/modal/modal-settings-html.html
+EMP/emp-checker-ggg-main/modal/modal-style.css
+EMP/emp-checker-ggg-main/modal/modal.js
+EMP/emp-checker-ggg-main/progress-bar/progress-bar-html.html
+EMP/emp-checker-ggg-main/progress-bar/progress-bar-style.css
+EMP/emp-checker-ggg-main/progress-bar/progress-bar.js
+EMP/emp-checker-ggg-main/sandbox/sandbox-html.html
+EMP/emp-checker-ggg-main/sandbox/sandbox.js
+EMP/emp-checker-ggg-main/.gitattributes
+EMP/emp-checker-ggg-main/.gitignore
+EMP/emp-checker-ggg-main/.prettierrc.json
+EMP/emp-checker-ggg-main/gm-lib.js
+EMP/emp-checker-ggg-main/LICENSE
+EMP/emp-checker-ggg-main/Main_UserScript.user.js
+EMP/emp-checker-ggg-main/main.js
+EMP/emp-checker-ggg-main/post-scanner.js
+EMP/emp-checker-ggg-main/todo
+EMP/emp-checker-ggg-main/added-post-buttons/added-post-buttons-html.html
+EMP/emp-checker-ggg-main/added-post-buttons/added-post-buttons-style.css
+EMP/emp-checker-ggg-main/added-post-buttons/added-post-buttons.js
+EMP/emp-checker-ggg-main/main-menu/main-menu-html.html
+EMP/emp-checker-ggg-main/main-menu/main-menu-style.css
+EMP/emp-checker-ggg-main/main-menu/main-menu.js
+EMP/emp-checker-ggg-main/modal/modal-html.html
+EMP/emp-checker-ggg-main/modal/modal-settings-html.html
+EMP/emp-checker-ggg-main/modal/modal-style.css
+EMP/emp-checker-ggg-main/modal/modal.js
+EMP/emp-checker-ggg-main/progress-bar/progress-bar-html.html
+EMP/emp-checker-ggg-main/progress-bar/progress-bar-style.css
+EMP/emp-checker-ggg-main/progress-bar/progress-bar.js
+EMP/emp-checker-ggg-main/sandbox/sandbox-html.html
+EMP/emp-checker-ggg-main/sandbox/sandbox.js
+EMP/butler-master/.gitignore
+EMP/butler-master/breen.js
+EMP/butler-master/butler.service
+EMP/butler-master/config.sample.json
+EMP/butler-master/copy.bat
+EMP/butler-master/franklin.js
+EMP/butler-master/franklin.js.bak
+EMP/butler-master/package.json
+EMP/butler-master/README.md
+EMP/EMP-checker-Polanski/.gitattributes
+EMP/EMP-checker-Polanski/.gitignore
+EMP/EMP-checker-Polanski/.prettierrc.json
+EMP/EMP-checker-Polanski/gm-lib.js
+EMP/EMP-checker-Polanski/LICENSE
+EMP/EMP-checker-Polanski/Main_UserScript.user.js
+EMP/EMP-checker-Polanski/main.js
+EMP/EMP-checker-Polanski/post-scanner.js
+EMP/EMP-checker-Polanski/todo
+EMP/EMP-checker-Polanski/added-post-buttons/added-post-buttons-html.html
+EMP/EMP-checker-Polanski/added-post-buttons/added-post-buttons-style.css
+EMP/EMP-checker-Polanski/added-post-buttons/added-post-buttons.js
+EMP/EMP-checker-Polanski/main-menu/main-menu-html.html
+EMP/EMP-checker-Polanski/main-menu/main-menu-style.css
+EMP/EMP-checker-Polanski/main-menu/main-menu.js
+EMP/EMP-checker-Polanski/modal/modal orig.js
+EMP/EMP-checker-Polanski/modal/modal-html.html
+EMP/EMP-checker-Polanski/modal/modal-settings-html.html
+EMP/EMP-checker-Polanski/modal/modal-style.css
+EMP/EMP-checker-Polanski/modal/modal.js
+EMP/EMP-checker-Polanski/progress-bar/progress-bar-html.html
+EMP/EMP-checker-Polanski/progress-bar/progress-bar-style.css
+EMP/EMP-checker-Polanski/progress-bar/progress-bar.js
+EMP/EMP-checker-Polanski/sandbox/sandbox-html.html
+EMP/EMP-checker-Polanski/sandbox/sandbox.js
+EMP/FLS-checker-for-EMP-dev/.gitattributes
+EMP/FLS-checker-for-EMP-dev/.gitignore
+EMP/FLS-checker-for-EMP-dev/.prettierrc.json
+EMP/FLS-checker-for-EMP-dev/gm-lib.js
+EMP/FLS-checker-for-EMP-dev/LICENSE
+EMP/FLS-checker-for-EMP-dev/Main_UserScript.user.js
+EMP/FLS-checker-for-EMP-dev/main.js
+EMP/FLS-checker-for-EMP-dev/post-scanner.js
+EMP/FLS-checker-for-EMP-dev/todo
+EMP/FLS-checker-for-EMP-dev/added-post-buttons/added-post-buttons-html.html
+EMP/FLS-checker-for-EMP-dev/added-post-buttons/added-post-buttons-style.css
+EMP/FLS-checker-for-EMP-dev/added-post-buttons/added-post-buttons.js
+EMP/FLS-checker-for-EMP-dev/main-menu/main-menu-html.html
+EMP/FLS-checker-for-EMP-dev/main-menu/main-menu-style.css
+EMP/FLS-checker-for-EMP-dev/main-menu/main-menu.js
+EMP/FLS-checker-for-EMP-dev/modal/modal-html.html
+EMP/FLS-checker-for-EMP-dev/modal/modal-style.css
+EMP/FLS-checker-for-EMP-dev/modal/modal.js
+EMP/FLS-checker-for-EMP-dev/progress-bar/progress-bar-html.html
+EMP/FLS-checker-for-EMP-dev/progress-bar/progress-bar-style.css
+EMP/FLS-checker-for-EMP-dev/progress-bar/progress-bar.js
+EMP/FLS-checker-for-EMP-dev/sandbox/sandbox-html.html
+EMP/FLS-checker-for-EMP-dev/sandbox/sandbox.js
+EMP/franklin-master/.gitignore
+EMP/franklin-master/config.sample.json
+EMP/franklin-master/copy.bat
+EMP/franklin-master/franklin.js
+EMP/franklin-master/package.json
+EMP/GGG emp checker (backup)/.gitattributes
+EMP/GGG emp checker (backup)/.gitignore
+EMP/GGG emp checker (backup)/.prettierrc.json
+EMP/GGG emp checker (backup)/comments.js
+EMP/GGG emp checker (backup)/gm-lib.js
+EMP/GGG emp checker (backup)/LICENSE
+EMP/GGG emp checker (backup)/Main_UserScript.user.js
+EMP/GGG emp checker (backup)/main.js
+EMP/GGG emp checker (backup)/post-scanner.js
+EMP/GGG emp checker (backup)/todo
+EMP/GGG emp checker (backup)/added-post-buttons/added-post-buttons-html.html
+EMP/GGG emp checker (backup)/added-post-buttons/added-post-buttons-style.css
+EMP/GGG emp checker (backup)/added-post-buttons/added-post-buttons.js
+EMP/GGG emp checker (backup)/main-menu/main-menu-html.html
+EMP/GGG emp checker (backup)/main-menu/main-menu-style.css
+EMP/GGG emp checker (backup)/main-menu/main-menu.js
+EMP/GGG emp checker (backup)/modal/modal-html.html
+EMP/GGG emp checker (backup)/modal/modal-settings-html.html
+EMP/GGG emp checker (backup)/modal/modal-style.css
+EMP/GGG emp checker (backup)/modal/modal.js
+EMP/GGG emp checker (backup)/progress-bar/progress-bar-html.html
+EMP/GGG emp checker (backup)/progress-bar/progress-bar-style.css
+EMP/GGG emp checker (backup)/progress-bar/progress-bar.js
+EMP/GGG emp checker (backup)/sandbox/sandbox-html.html
+EMP/GGG emp checker (backup)/sandbox/sandbox.js
+EMP/Hexchat/EUT.py
+EMP/IPBot-master/default.cfg.example
+EMP/IPBot-master/readme.txt
+EMP/IPBot-master/modules/oper.py
+EMP/IPBot-master/plugins/oper.py
+EMP/IPBot-master/plugins/__pycache__/oper.cpython-311.pyc
+EMP/Luminance/functions.php
+EMP/Luminance/test.php
+EMP/My scripts/Checkboxes/main.css
+EMP/My scripts/Checkboxes/main.html
+EMP/My scripts/Checkboxes/script.js
+Jupyter Notebook/.ipynb
+Jupyter Notebook/Beltmatic Optimizer.ipynb
+Jupyter Notebook/chromedriver.exe
+Jupyter Notebook/Instascrape.ipynb
+Jupyter Notebook/Minecraft.ipynb
+Jupyter Notebook/Python commands.txt
+Jupyter Notebook/Sums of four primes.ipynb
+Jupyter Notebook/twitch-recorder.py
+Jupyter Notebook/Twitter Scraper (pics).ipynb
+Jupyter Notebook/Twitter_cookie.txt
+Jupyter Notebook/Untitled.ipynb
+Jupyter Notebook/Untitled1.ipynb
+Jupyter Notebook/Amateur.tv/Amateur (working 03-2022).ipynb
+Jupyter Notebook/Amateur.tv/Amateur Update Database.ipynb
+Jupyter Notebook/Amateur.tv/Cam ID retrieval.ipynb
+Jupyter Notebook/Amateur.tv/chromedriver.exe
+Jupyter Notebook/Amateur.tv/chromedriver.exe.bak
+Jupyter Notebook/Amateur.tv/Not working (capohls).ipynb
+Jupyter Notebook/Amateur.tv/Working.ipynb
+Jupyter Notebook/Amateur.tv/.ipynb_checkpoints/Amateur (working 03-2022)-checkpoint.ipynb
+Jupyter Notebook/Amateur.tv/.ipynb_checkpoints/Amateur Update Database-checkpoint.ipynb
+Jupyter Notebook/Amateur.tv/.ipynb_checkpoints/Cam ID retrieval-checkpoint.ipynb
+Jupyter Notebook/Amateur.tv/.ipynb_checkpoints/Not working (capohls)-checkpoint.ipynb
+Jupyter Notebook/Amateur.tv/.ipynb_checkpoints/Working-checkpoint.ipynb
+Jupyter Notebook/BonArea/Precios.csv
+Jupyter Notebook/BonArea/Price Checker.ipynb
+Jupyter Notebook/BonArea/PriceCheckScheduler.py
+Jupyter Notebook/Dan - Scraping/BGames Scraper with Hyperlinks (all).ipynb
+Jupyter Notebook/Dan - Scraping/New Scraping (Z drive).ipynb
+Jupyter Notebook/Dan - Scraping/Scraper 2023.ipynb
+Jupyter Notebook/Dan - Scraping/scraping.txt
+Jupyter Notebook/Dan - Scraping/.ipynb_checkpoints/BGames Scraper with Hyperlinks (all)-checkpoint.ipynb
+Jupyter Notebook/Dan - Scraping/.ipynb_checkpoints/New Scraping (Z drive)-checkpoint.ipynb
+Jupyter Notebook/Dan - Scraping/.ipynb_checkpoints/Scraper 2023-checkpoint.ipynb
+Jupyter Notebook/EMP - FBI/#1 - FBI Update Monthly Count.ipynb
+Jupyter Notebook/EMP - FBI/#2 - FBI Update Main Count.ipynb
+Jupyter Notebook/EMP - FBI/#3 - FBI Temp User ID merge.ipynb
+Jupyter Notebook/EMP - FBI/#4 - FBI Generate BBcode Table.ipynb
+Jupyter Notebook/EMP - FBI/#5 - FBI Dupe Checker.ipynb
+Jupyter Notebook/EMP - FBI/main.csv
+Jupyter Notebook/EMP - FBI/monthly.csv
+Jupyter Notebook/EMP - FBI/report.txt
+Jupyter Notebook/EMP - FBI/userid.csv
+Jupyter Notebook/EMP - FBI/.ipynb_checkpoints/#0 - FBI - Full Monthly Update-checkpoint.ipynb
+Jupyter Notebook/EMP - FBI/.ipynb_checkpoints/#1 - FBI Update Monthly Count-checkpoint.ipynb
+Jupyter Notebook/EMP - FBI/.ipynb_checkpoints/#2 - FBI Update Main Count-checkpoint.ipynb
+Jupyter Notebook/EMP - FBI/.ipynb_checkpoints/#3 - FBI Temp User ID merge-checkpoint.ipynb
+Jupyter Notebook/EMP - FBI/.ipynb_checkpoints/#4 - FBI Generate BBcode Table-checkpoint.ipynb
+Jupyter Notebook/EMP - FBI/.ipynb_checkpoints/#5 - FBI Dupe Checker-checkpoint.ipynb
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (01 2020).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (01 2021).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (01 2022).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (02 2020).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (02 2021).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (02 2022).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (03 2020).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (03 2021).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (03 2022).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (04 2020).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (04 2021).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (04 2022).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (4th solved cases thread).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (05 2019).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (05 2020).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (05 2021).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (5th solved cases thread).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (06 2019).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (06 2020).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (06 2021).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (6th solved cases thread).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (07 2019).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (07 2020).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (07 2021).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (08 2019).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (08 2020).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (08 2021).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (09 2019).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (09 2020).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (09 2021).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (10 2019).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (10 2020).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (10 2021).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (11 2019).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (11 2020).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (11 2021).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (12 2019).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (12 2020).txt
+Jupyter Notebook/EMP - FBI/bbcode/bbcode (12 2021).txt
+Jupyter Notebook/EMP - FBI/monthly/monthly (01 2020).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (01 2021).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (01 2022).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (02 2020).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (02 2021).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (02 2022).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (03 2020).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (03 2021).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (03 2022).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (04 2020).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (04 2021).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (04 2022).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (4th solved cases thread).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (05 2020).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (05 2021).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (5th solved cases thread).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (06 2019).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (06 2020).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (06 2021).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (6th solved cases thread).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (07 2019).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (07 2020).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (07 2021).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (08 2019).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (08 2020).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (08 2021).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (09 2019).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (09 2020).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (09 2021).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (10 2019).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (10 2020).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (10 2021).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (11 2019).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (11 2020).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (11 2021).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (12 2019).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (12 2020).csv
+Jupyter Notebook/EMP - FBI/monthly/monthly (12 2021).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (01 2020).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (01 2021).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (01 2022).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (02 2020).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (02 2021).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (02 2022).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (03 2020).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (03 2021).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (03 2022).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (04 2020).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (04 2021).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (04 2022).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (4th solved cases thread).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (05 2019).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (05 2020).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (05 2021).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (5th solved cases thread).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (06 2019).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (06 2020).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (06 2021).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (6th solved cases thread).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (07 2019).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (07 2020).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (07 2021).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (08 2019).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (08 2020).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (08 2021).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (09 2019).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (09 2020).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (09 2021).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (10 2019).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (10 2020).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (10 2021).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (11 2019).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (11 2020).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (11 2021).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (12 2019).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (12 2020).csv
+Jupyter Notebook/EMP - FBI/newmain/newmain (12 2021).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (01 2020).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (01 2021).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (01 2022).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (02 2020).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (02 2021).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (02 2022).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (03 2020).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (03 2021).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (03 2022).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (04 2020).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (04 2021).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (04 2022).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (4th solved cases thread).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (05 2020).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (05 2021).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (5th solved cases thread).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (06 2019).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (06 2020).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (06 2021).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (6th solved cases thread).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (07 2020).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (07 2021).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (08 2019).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (08 2020).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (08 2021).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (09 2019).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (09 2020).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (09 2021).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (10 2019).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (10 2020).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (10 2021).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (11 2019).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (11 2020).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (11 2021).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (12 2019).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (12 2020).csv
+Jupyter Notebook/EMP - FBI/newmainID/newmainID (12 2021).csv
+Jupyter Notebook/Gravure Scraper/Eic-book.com (model scraper).ipynb
+Jupyter Notebook/Gravure Scraper/Eic-book.com (title info scraper).ipynb
+Jupyter Notebook/Gravure Scraper/.ipynb_checkpoints/Eic-book.com (model scraper)-checkpoint.ipynb
+Jupyter Notebook/Gravure Scraper/.ipynb_checkpoints/Eic-book.com (title info scraper)-checkpoint.ipynb
+Jupyter Notebook/LeakedZone Scraper/-images.txt
+Jupyter Notebook/LeakedZone Scraper/-videos.txt
+Jupyter Notebook/LeakedZone Scraper/chromedriver.exe
+Jupyter Notebook/LeakedZone Scraper/CoomerParty (selenium).ipynb
+Jupyter Notebook/LeakedZone Scraper/CoomerParty (urllib).ipynb
+Jupyter Notebook/LeakedZone Scraper/facebookcookie.txt
+Jupyter Notebook/LeakedZone Scraper/geckodriver.exe
+Jupyter Notebook/LeakedZone Scraper/geckodriver.log
+Jupyter Notebook/LeakedZone Scraper/images.txt
+Jupyter Notebook/LeakedZone Scraper/LeakedZone.ipynb
+Jupyter Notebook/LeakedZone Scraper/output (old).txt
+Jupyter Notebook/LeakedZone Scraper/output.txt
+Jupyter Notebook/LeakedZone Scraper/videos.txt
+Jupyter Notebook/LeakedZone Scraper/.ipynb_checkpoints/CoomerParty (selenium)-checkpoint.ipynb
+Jupyter Notebook/LeakedZone Scraper/.ipynb_checkpoints/CoomerParty (urllib)-checkpoint.ipynb
+Jupyter Notebook/LeakedZone Scraper/.ipynb_checkpoints/LeakedZone-checkpoint.ipynb
+Jupyter Notebook/LeakedZone Scraper/selenium/First Run
+Jupyter Notebook/LeakedZone Scraper/selenium/Local State
+Jupyter Notebook/LeakedZone Scraper/selenium/Default/Preferences
+Jupyter Notebook/Motherless/Motherless search scraper.ipynb
+Jupyter Notebook/Motherless/seba links.txt
+Jupyter Notebook/Motherless/.ipynb_checkpoints/Motherless search scraper-checkpoint.ipynb
+Jupyter Notebook/Test/Acestream.ipynb
+Jupyter Notebook/Test/Endesa.ipynb
+Jupyter Notebook/Test/IMDb Watched List Scraping.ipynb
+Jupyter Notebook/Test/SIAR.csv
+Jupyter Notebook/Test/SIAR.ipynb
+Jupyter Notebook/Test/test.csv
+Jupyter Notebook/Test/Untitled.ipynb
+Jupyter Notebook/Test/.ipynb_checkpoints/Acestream-checkpoint.ipynb
+Jupyter Notebook/Test/.ipynb_checkpoints/Endesa-checkpoint.ipynb
+Jupyter Notebook/Test/.ipynb_checkpoints/IMDb Watched List Scraping-checkpoint.ipynb
+Jupyter Notebook/Test/.ipynb_checkpoints/SIAR-checkpoint.ipynb
+Jupyter Notebook/Test/.ipynb_checkpoints/Untitled-checkpoint.ipynb
+Jupyter Notebook/Whisper/faster-whisper.py
+Jupyter Notebook/Whisper/script.py
+Jupyter Notebook/Whisper/vad.py
+Learning/favicon.ico
+Learning/Coding Train Challenges/Another Snake Game/index.html
+Learning/Coding Train Challenges/Another Snake Game/index.js
+Learning/Coding Train Challenges/Another Snake Game/snake.js
+Learning/Coding Train Challenges/Another Snake Game/style.css
+Learning/Coding Train Challenges/Snake Game/index.html
+Learning/Coding Train Challenges/Snake Game/jsconfig.json
+Learning/Coding Train Challenges/Snake Game/sketch.js
+Learning/Coding Train Challenges/Snake Game/snake.js
+Learning/Coding Train Challenges/Snake Game/style.css
+Learning/Coding Train Challenges/Snake Game/libraries/p5.min.js
+Learning/Coding Train Challenges/Snake Game/libraries/p5.sound.min.js
+Learning/JS Tutorials/index.html
+Learning/JS Tutorials/script.js
+Learning/ProjectEuler/arrow_left.png
+Learning/ProjectEuler/arrow_right.png
+Learning/ProjectEuler/index.css
+Learning/ProjectEuler/p015.png
+Learning/ProjectEuler/p022_names.txt
+Learning/ProjectEuler/p022_names(cleaned).txt
+Learning/ProjectEuler/Thumbs.db
+Learning/ProjectEuler/01-10/Problem 1 - Multiples of 3 or 5/index.html
+Learning/ProjectEuler/01-10/Problem 1 - Multiples of 3 or 5/script.js
+Learning/ProjectEuler/01-10/Problem 10 - Summation of primes/index.html
+Learning/ProjectEuler/01-10/Problem 10 - Summation of primes/script.js
+Learning/ProjectEuler/01-10/Problem 10 - Summation of primes/11-20/Problem 11 - Largest product in a grid/index.html
+Learning/ProjectEuler/01-10/Problem 10 - Summation of primes/11-20/Problem 11 - Largest product in a grid/script.js
+Learning/ProjectEuler/01-10/Problem 10 - Summation of primes/11-20/Problem 12 - Highly divisible triangular numbers/index.html
+Learning/ProjectEuler/01-10/Problem 10 - Summation of primes/11-20/Problem 12 - Highly divisible triangular numbers/script.js
+Learning/ProjectEuler/01-10/Problem 10 - Summation of primes/11-20/Problem 13 - Large sum/index.html
+Learning/ProjectEuler/01-10/Problem 10 - Summation of primes/11-20/Problem 13 - Large sum/script.js
+Learning/ProjectEuler/01-10/Problem 10 - Summation of primes/11-20/Problem 14 - Longest Collatz sequence/index.html
+Learning/ProjectEuler/01-10/Problem 10 - Summation of primes/11-20/Problem 14 - Longest Collatz sequence/script.js
+Learning/ProjectEuler/01-10/Problem 10 - Summation of primes/11-20/Problem 15 - Lattice paths/index.html
+Learning/ProjectEuler/01-10/Problem 10 - Summation of primes/11-20/Problem 15 - Lattice paths/script.js
+Learning/ProjectEuler/01-10/Problem 10 - Summation of primes/11-20/Problem 16 - Power digit sum/index.html
+Learning/ProjectEuler/01-10/Problem 10 - Summation of primes/11-20/Problem 16 - Power digit sum/script.js
+Learning/ProjectEuler/01-10/Problem 10 - Summation of primes/11-20/Problem 17 - Number letter counts/index.html
+Learning/ProjectEuler/01-10/Problem 10 - Summation of primes/11-20/Problem 17 - Number letter counts/script.js
+Learning/ProjectEuler/01-10/Problem 10 - Summation of primes/11-20/Problem 18 - Maximum path sum I/index.html
+Learning/ProjectEuler/01-10/Problem 10 - Summation of primes/11-20/Problem 18 - Maximum path sum I/script.js
+Learning/ProjectEuler/01-10/Problem 10 - Summation of primes/11-20/Problem 19 - Counting Sundays/index.html
+Learning/ProjectEuler/01-10/Problem 10 - Summation of primes/11-20/Problem 19 - Counting Sundays/script.js
+Learning/ProjectEuler/01-10/Problem 10 - Summation of primes/11-20/Problem 20 - Factorial digit sum/index.html
+Learning/ProjectEuler/01-10/Problem 10 - Summation of primes/11-20/Problem 20 - Factorial digit sum/script.js
+Learning/ProjectEuler/01-10/Problem 2 - Even Fibonacci numbers/index.html
+Learning/ProjectEuler/01-10/Problem 2 - Even Fibonacci numbers/script.js
+Learning/ProjectEuler/01-10/Problem 3 - Largest prime factor/index.html
+Learning/ProjectEuler/01-10/Problem 3 - Largest prime factor/script.js
+Learning/ProjectEuler/01-10/Problem 4 - Largest palindrome product/index.html
+Learning/ProjectEuler/01-10/Problem 4 - Largest palindrome product/script.js
+Learning/ProjectEuler/01-10/Problem 5 - Smallest multiple/index.html
+Learning/ProjectEuler/01-10/Problem 5 - Smallest multiple/script.js
+Learning/ProjectEuler/01-10/Problem 6 - Sum square difference/index.html
+Learning/ProjectEuler/01-10/Problem 6 - Sum square difference/script.js
+Learning/ProjectEuler/01-10/Problem 7 - 10001st prime/index.html
+Learning/ProjectEuler/01-10/Problem 7 - 10001st prime/script.js
+Learning/ProjectEuler/01-10/Problem 8 - Largest product in a series/index.html
+Learning/ProjectEuler/01-10/Problem 8 - Largest product in a series/script.js
+Learning/ProjectEuler/01-10/Problem 9 - Special Pythagorean triplet/index.html
+Learning/ProjectEuler/01-10/Problem 9 - Special Pythagorean triplet/script.js
+Learning/ProjectEuler/11-20/Problem 11 - Largest product in a grid/index.html
+Learning/ProjectEuler/11-20/Problem 11 - Largest product in a grid/script.js
+Learning/ProjectEuler/11-20/Problem 12 - Highly divisible triangular numbers/index.html
+Learning/ProjectEuler/11-20/Problem 12 - Highly divisible triangular numbers/script.js
+Learning/ProjectEuler/11-20/Problem 13 - Large sum/index.html
+Learning/ProjectEuler/11-20/Problem 13 - Large sum/script.js
+Learning/ProjectEuler/11-20/Problem 14 - Longest Collatz sequence/index.html
+Learning/ProjectEuler/11-20/Problem 14 - Longest Collatz sequence/script.js
+Learning/ProjectEuler/11-20/Problem 15 - Lattice paths/index.html
+Learning/ProjectEuler/11-20/Problem 15 - Lattice paths/script.js
+Learning/ProjectEuler/11-20/Problem 16 - Power digit sum/index.html
+Learning/ProjectEuler/11-20/Problem 16 - Power digit sum/script.js
+Learning/ProjectEuler/11-20/Problem 17 - Number letter counts/index.html
+Learning/ProjectEuler/11-20/Problem 17 - Number letter counts/script.js
+Learning/ProjectEuler/11-20/Problem 18 - Maximum path sum I/index.html
+Learning/ProjectEuler/11-20/Problem 18 - Maximum path sum I/script.js
+Learning/ProjectEuler/11-20/Problem 19 - Counting Sundays/index.html
+Learning/ProjectEuler/11-20/Problem 19 - Counting Sundays/script.js
+Learning/ProjectEuler/11-20/Problem 20 - Factorial digit sum/index.html
+Learning/ProjectEuler/11-20/Problem 20 - Factorial digit sum/script.js
+Learning/ProjectEuler/21-30/Problem 21 - Amicable numbers/index.html
+Learning/ProjectEuler/21-30/Problem 21 - Amicable numbers/script.js
+Learning/ProjectEuler/21-30/Problem 22 - Names scores/index.html
+Learning/ProjectEuler/21-30/Problem 22 - Names scores/script.js
+Learning/ProjectEuler/21-30/Problem 23 - Non-abundant sums/index.html
+Learning/ProjectEuler/21-30/Problem 23 - Non-abundant sums/script.js
+Learning/ProjectEuler/21-30/Problem 24 - Lexicographic permutations/index.html
+Learning/ProjectEuler/21-30/Problem 24 - Lexicographic permutations/script.js
+Learning/ProjectEuler/21-30/Problem 25 - 1000-digit Fibonacci number/index.html
+Learning/ProjectEuler/21-30/Problem 25 - 1000-digit Fibonacci number/script.js
+Learning/ProjectEuler/21-30/Problem 26 - Reciprocal cycles/index.html
+Learning/ProjectEuler/21-30/Problem 26 - Reciprocal cycles/script.js
+Learning/ProjectEuler/21-30/Problem 27 - Quadratic primes/index.html
+Learning/ProjectEuler/21-30/Problem 27 - Quadratic primes/script.js
+Learning/ProjectEuler/21-30/Problem 28 - Number spiral diagonals/index.html
+Learning/ProjectEuler/21-30/Problem 28 - Number spiral diagonals/script.js
+Learning/ProjectEuler/21-30/Problem 29 - Distinct powers/index.html
+Learning/ProjectEuler/21-30/Problem 29 - Distinct powers/script.js
+Learning/ProjectEuler/21-30/Problem 30 - Digit fifth powers/index.html
+Learning/ProjectEuler/21-30/Problem 30 - Digit fifth powers/script.js
+Learning/ProjectEuler/31-40/Problem 31 - Coin sums/index.html
+Learning/ProjectEuler/31-40/Problem 31 - Coin sums/script.js
+Learning/ProjectEuler/31-40/Problem 32 - Pandigital products/index.html
+Learning/ProjectEuler/31-40/Problem 32 - Pandigital products/script.js
+Learning/ProjectEuler/31-40/Problem 33 - Digit cancelling fractions/index.html
+Learning/ProjectEuler/31-40/Problem 33 - Digit cancelling fractions/script.js
+Learning/ProjectEuler/31-40/Problem 34 - Digit Factorials/index.html
+Learning/ProjectEuler/31-40/Problem 34 - Digit Factorials/script.js
+Learning/ProjectEuler/31-40/Problem 35 - Circular Primes/index.html
+Learning/ProjectEuler/31-40/Problem 35 - Circular Primes/script.js
+Learning/ProjectEuler/31-40/Problem 36 - Double-base Palindromes/index.html
+Learning/ProjectEuler/31-40/Problem 36 - Double-base Palindromes/script.js
+Learning/ProjectEuler/31-40/Problem 37 - Truncatable Primes/index.html
+Learning/ProjectEuler/31-40/Problem 37 - Truncatable Primes/script.js
+Learning/ProjectEuler/31-40/Problem 38 - Pandigital Multiples/index.html
+Learning/ProjectEuler/31-40/Problem 38 - Pandigital Multiples/script.js
+Learning/ProjectEuler/31-40/Problem 39 - Integer Right Triangles/index.html
+Learning/ProjectEuler/31-40/Problem 39 - Integer Right Triangles/script.js
+Learning/ProjectEuler/31-40/Problem 40 - Champernowne's Constant/index.html
+Learning/ProjectEuler/31-40/Problem 40 - Champernowne's Constant/script.js
+Learning/Snake/0035A0E400000258-0-image-m-7_1487281313644.jpg
+Learning/Snake/nintchdbpict000302037246.jpg
+Learning/Snake/NOG_snakegame.jpg
+Learning/Snake/oyx7jsrhsrw21.jpg
+Learning/Snake/snake II.bmp
+Learning/Snake/sub-buzz-2636-1488854240-1.jpg
+Learning/Snake/sub-buzz-24134-1488853385-1.jpg
+Learning/Snake/Thumbs.db
+Scrapers/615_import_firefox_session.py
+EMP/My scripts/EMP FLS Report Helper.js
+EMP/My scripts/EMP Link Redirects.js
+EMP/My scripts/EMP MFD Counter.js
+EMP/My scripts/EMP Public Requests URL Enhancer.js
+EMP/My scripts/EMP User IP History URL Enhancer.js
+EMP/My scripts/EMP User Sessions Enhancer.js
