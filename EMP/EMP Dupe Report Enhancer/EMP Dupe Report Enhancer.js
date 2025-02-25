@@ -1,11 +1,14 @@
 // ==UserScript==
 // @name         EMP Dupe Report Enhancer
 // @namespace    http://tampermonkey.net/
-// @version      0.5
+// @version      0.6
 // @description  Adds functionality to System Dupe Reports
 // @author       Polanski
 // @match        https://www.empornium.is/staffpm.php?action=viewconv&id=*
+// @match        https://emp.beta.pervwerks.de/staffpm.php?action=viewconv&id=*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=empornium.is
+// @downloadURL  https://raw.githubusercontent.com/PolanskiEMP/Projects/refs/heads/main/EMP/EMP%20Dupe%20Report%20Enhancer/EMP%20Dupe%20Report%20Enhancer.js
+// @updateURL    https://raw.githubusercontent.com/PolanskiEMP/Projects/refs/heads/main/EMP/EMP%20Dupe%20Report%20Enhancer/EMP%20Dupe%20Report%20Enhancer.js
 // @grant        none
 // ==/UserScript==
 
@@ -27,6 +30,8 @@
   console.log("Dupe report detected!");
 
   const torrents = document.querySelectorAll("span[id^='url_']");
+  const buttons = document.querySelectorAll("input");
+  const resolveButton = buttons[buttons.length - 1];
 
   // Create floating header
   const contentDiv = document.querySelector("div[class='post_content']");
@@ -38,6 +43,8 @@
   const checkAllCell = newRow.insertCell(0);
   const checkUnseededCell = newRow.insertCell(1);
   const checkMismatchedCell = newRow.insertCell(2);
+  const newDiv = document.createElement("div");
+  const newResolveButton = resolveButton.cloneNode(true);
 
   // Move all required elements to the floating header
   let elements = [];
@@ -50,12 +57,18 @@
   }
   dupeTotals.after(checkTable);
   checkTable.appendChild(checkTableBody);
+  newDiv.appendChild(newResolveButton);
+  floatingDiv.insertBefore(newDiv, checkTable.nextElementSibling.nextElementSibling);
 
   // CSS
   document.querySelector("div[id='content']").style =
     "overflow: unset !important";
   floatingDiv.className = "box";
+  floatingDiv.id = "floating_header";
   floatingDiv.style = "position: sticky; top: 0; border: 0px";
+  newDiv.style = "display: flex";
+  newResolveButton.style = "margin: auto";
+  newResolveButton.setAttribute("form", "messageform");
   checkTable.className = "bbcode";
   checkTable.id = "check_table";
   checkAllCell.className = "bbcode";
