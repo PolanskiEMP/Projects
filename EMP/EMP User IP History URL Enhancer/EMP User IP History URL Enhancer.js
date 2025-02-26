@@ -6,6 +6,8 @@
 // @author       Polanski
 // @match        https://www.empornium.is/userhistory.php?*action=*ips*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=empornium.is
+// @downloadURL  https://raw.githubusercontent.com/PolanskiEMP/Projects/refs/heads/main/EMP/EMP%20User%20IP%20History%20URL%20Enhancer/EMP%20User%20IP%20History%20URL%20Enhancer.js
+// @updateURL    https://raw.githubusercontent.com/PolanskiEMP/Projects/refs/heads/main/EMP/EMP%20User%20IP%20History%20URL%20Enhancer/EMP%20User%20IP%20History%20URL%20Enhancer.js
 // @grant        none
 // ==/UserScript==
 
