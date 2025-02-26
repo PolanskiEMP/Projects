@@ -2,10 +2,12 @@
 // @name         EMP MFD Counter
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  Adds a total unchecked torrents count
+// @description  Adds a total unchecked torrents count to the MFD page
 // @author       Polanski
 // @match        https://www.empornium.is/tools.php?action=marked_for_deletion&viewstatus=unmarked*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=empornium.is
+// @downloadURL  https://raw.githubusercontent.com/PolanskiEMP/Projects/refs/heads/main/EMP/EMP%20MFD%20Counter/EMP%20MFD%20Counter.js
+// @updateURL    https://raw.githubusercontent.com/PolanskiEMP/Projects/refs/heads/main/EMP/EMP%20MFD%20Counter/EMP%20MFD%20Counter.js
 // @grant        none
 // ==/UserScript==
 
