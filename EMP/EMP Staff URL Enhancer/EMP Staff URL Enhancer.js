@@ -8,8 +8,8 @@
 // @match        https://www.empornium.is/userhistory.php?*action=*ips*
 // @match        https://www.empornium.is/manage/requests/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=empornium.is
-// @downloadURL
-// @updateURL
+// @downloadURL  https://raw.githubusercontent.com/PolanskiEMP/Projects/refs/heads/main/EMP/EMP%20Staff%20URL%20Enhancer/EMP%20Staff%20URL%20Enhancer.js
+// @updateURL    https://raw.githubusercontent.com/PolanskiEMP/Projects/refs/heads/main/EMP/EMP%20Staff%20URL%20Enhancer/EMP%20Staff%20URL%20Enhancer.js
 // @grant        none
 // ==/UserScript==
 
@@ -61,7 +61,7 @@ function replaceRequest() {
     7,
     null
   );
-  
+
   for (let i = 0; i < lastIP.snapshotLength; i++) {
     let oldIP = lastIP
       .snapshotItem(i)
