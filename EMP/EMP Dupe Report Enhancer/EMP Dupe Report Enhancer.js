@@ -5,7 +5,6 @@
 // @description  Adds functionality to System Dupe Reports
 // @author       Polanski
 // @match        https://www.empornium.is/staffpm.php?action=viewconv&id=*
-// @match        https://emp.beta.pervwerks.de/staffpm.php?action=viewconv&id=*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=empornium.is
 // @downloadURL  https://raw.githubusercontent.com/PolanskiEMP/Projects/refs/heads/main/EMP/EMP%20Dupe%20Report%20Enhancer/EMP%20Dupe%20Report%20Enhancer.js
 // @updateURL    https://raw.githubusercontent.com/PolanskiEMP/Projects/refs/heads/main/EMP/EMP%20Dupe%20Report%20Enhancer/EMP%20Dupe%20Report%20Enhancer.js
