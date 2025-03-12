@@ -1,12 +1,13 @@
 // ==UserScript==
-// @name         EMP StaffPM URL Enhancer
+// @name         EMP Staff URL Enhancer
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  Adds VPN check integration for EMP staff related pages (staffPM, user history, public request)
+// @description  Adds VPN check integration for EMP staff related pages (staffPM, public requests, user history, user sessions)
 // @author       Polanski
 // @match        https://www.empornium.is/staffpm.php*
 // @match        https://www.empornium.is/userhistory.php?*action=*ips*
 // @match        https://www.empornium.is/manage/requests/*
+// @match        https://www.empornium.is/user.php?action=sessions*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=empornium.is
 // @downloadURL  https://raw.githubusercontent.com/PolanskiEMP/Projects/refs/heads/main/EMP/EMP%20Staff%20URL%20Enhancer/EMP%20Staff%20URL%20Enhancer.js
 // @updateURL    https://raw.githubusercontent.com/PolanskiEMP/Projects/refs/heads/main/EMP/EMP%20Staff%20URL%20Enhancer/EMP%20Staff%20URL%20Enhancer.js
@@ -26,7 +27,10 @@ function replaceLinks() {
     ? replaceStaffPM()
     : url.includes("/requests/")
     ? replaceRequest()
-    : replaceHistory();
+    : url.includes("userhistory.php")
+    ? replaceHistory()
+    : replaceSessions()
+
   return true;
 }
 
@@ -219,6 +223,89 @@ function replaceHistory() {
     newElement.setAttribute("title", "Check VPN");
     newElement.textContent = "VPN";
 
+  }
+  return true;
+}
+
+function replaceSessions() {
+  console.log("User Sessions page detected")
+
+  // Creates a VPN column in the table header
+  let header = document.evaluate(
+    "//tr[@class='colhead']",
+    document,
+    null,
+    7,
+    null
+  );
+  let headerNewColumn = header
+    .snapshotItem(0)
+    .firstElementChild.cloneNode(true);
+  headerNewColumn.textContent = "VPN";
+  header
+    .snapshotItem(0)
+    .firstElementChild.insertAdjacentElement("afterend", headerNewColumn);
+
+  // Grabs all table rows
+  let rowsA = document.evaluate("//tr[@class='rowa']", document, null, 7, null);
+  let rowsB = document.evaluate("//tr[@class='rowb']", document, null, 7, null);
+
+  for (let i = 0; i < rowsB.snapshotLength; i++) {
+    // Grabs user session IP
+    let IPCell = rowsB.snapshotItem(i).firstElementChild;
+    let IP = IPCell.textContent;
+    // Creates IP search links
+    let newCheckIPLinkB = Object.assign(document.createElement("a"), {
+      href: `/user.php?action=search&ip_history=on&ip=${IP}&matchtype=fuzzy`,
+      target: "_blank",
+      title: "Search IP",
+      textContent: IP,
+    });
+    // Removes cell text and appends IP search links
+    IPCell.textContent = "";
+    IPCell.appendChild(newCheckIPLinkB);
+    // Creates VPN check links
+    let newVPNLinkB = Object.assign(document.createElement("a"), {
+      href: URL + IP,
+      target: "_blank",
+      title: "Check VPN",
+      textContent: "Check",
+    });
+    // Creates new cell and appends VPN check links
+    let newCellB = document.createElement("td");
+    newCellB.appendChild(newVPNLinkB);
+    rowsB
+      .snapshotItem(i)
+      .firstElementChild.insertAdjacentElement("afterend", newCellB);
+  }
+
+  for (let i = 0; i < rowsA.snapshotLength; i++) {
+    // Grabs user session IP
+    let IPCell = rowsA.snapshotItem(i).firstElementChild;
+    let IP = IPCell.textContent;
+    // Creates IP search links
+    let newCheckIPLinkA = Object.assign(document.createElement("a"), {
+      href: `/user.php?action=search&ip_history=on&ip=${IP}&matchtype=fuzzy`,
+      target: "_blank",
+      title: "Search IP",
+      textContent: IP,
+    });
+    // Removes cell text and appends IP search links
+    IPCell.textContent = "";
+    IPCell.appendChild(newCheckIPLinkA);
+    // Creates VPN check links
+    let newVPNLinkA = Object.assign(document.createElement("a"), {
+      href: URL + IP,
+      target: "_blank",
+      title: "Check VPN",
+      textContent: "Check",
+    });
+    // Creates new cell and appends VPN check links
+    let newCellA = document.createElement("td");
+    newCellA.appendChild(newVPNLinkA);
+    rowsA
+      .snapshotItem(i)
+      .firstElementChild.insertAdjacentElement("afterend", newCellA);
   }
   return true;
 }
