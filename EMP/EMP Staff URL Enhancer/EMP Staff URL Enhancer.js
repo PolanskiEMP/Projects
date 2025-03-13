@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         EMP Staff URL Enhancer
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Adds VPN check integration for EMP staff related pages (staffPM, public requests, user history, user sessions)
 // @author       Polanski
 // @match        https://www.empornium.is/staffpm.php*
@@ -14,29 +14,41 @@
 // @grant        none
 // ==/UserScript==
 
-(function () {
-  "use strict";
-  setTimeout(replaceLinks, 1500);
-})();
-
 const checker = "https://awebanalysis.com/en/ip-lookup/";
 const url = window.location.href;
 
-function replaceLinks() {
+function addObserver() {
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      if (mutation.addedNodes) {
+        mutation.addedNodes.forEach((node) => {
+          if (node.id === "MathJax_Message") {
+            console.log("MathJax detected");
+            getSection();
+          }
+        });
+      }
+    });
+  });
+
+  observer.observe(document, { childList: true, subtree: true });
+}
+
+function getSection() {
   url.includes("staffpm.php")
     ? replaceStaffPM()
     : url.includes("/requests/")
     ? replaceRequest()
     : url.includes("userhistory.php")
     ? replaceHistory()
-    : replaceSessions()
+    : replaceSessions();
 
   return true;
 }
 
 function replaceRequest() {
   console.log("Public requests page detected");
-    
+
   let lastIP = document.evaluate(
     "//td[text()='Last User IP:']",
     document,
@@ -164,7 +176,9 @@ function replaceRequest() {
 function replaceStaffPM() {
   const title = document.querySelector("h2");
 
-  if (title.textContent == "Staff PM - Possible hack attempt or dupe accounts") {
+  if (
+    title.textContent == "Staff PM - Possible hack attempt or dupe accounts"
+  ) {
     console.log("StaffPM page detected");
 
     const post = document.querySelector("div[class='post_content']");
@@ -201,7 +215,6 @@ function replaceHistory() {
   const results = document.querySelectorAll("tr[class='rowa']");
 
   for (const result of results) {
-
     let IPnode = result.childNodes[1].childNodes[4];
     IPnode.textContent = "IP";
     IPnode.setAttribute("target", "_blank");
@@ -215,20 +228,25 @@ function replaceHistory() {
     let rightBracket = result.childNodes[1].childNodes[9];
 
     const newElement = trackerIP.cloneNode(false);
-    result.childNodes[1].insertBefore(doubleBracket, result.childNodes[1].childNodes[7]);
-    result.childNodes[1].insertBefore(newElement, result.childNodes[1].childNodes[8]);
+    result.childNodes[1].insertBefore(
+      doubleBracket,
+      result.childNodes[1].childNodes[7]
+    );
+    result.childNodes[1].insertBefore(
+      newElement,
+      result.childNodes[1].childNodes[8]
+    );
 
     newElement.setAttribute("href", checker + IP);
     newElement.setAttribute("target", "_blank");
     newElement.setAttribute("title", "Check VPN");
     newElement.textContent = "VPN";
-
   }
   return true;
 }
 
 function replaceSessions() {
-  console.log("User Sessions page detected")
+  console.log("User Sessions page detected");
 
   // Creates a VPN column in the table header
   let header = document.evaluate(
@@ -308,5 +326,6 @@ function replaceSessions() {
       .firstElementChild.insertAdjacentElement("afterend", newCellA);
   }
   return true;
-
 }
+
+addObserver();
