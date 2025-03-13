@@ -216,7 +216,7 @@ function replaceHistory() {
 
     const newElement = trackerIP.cloneNode(false);
     result.childNodes[1].insertBefore(doubleBracket, result.childNodes[1].childNodes[7]);
-    result.childNodes[1].insertBefore(newElement, rightBracket);
+    result.childNodes[1].insertBefore(newElement, result.childNodes[1].childNodes[8]);
 
     newElement.setAttribute("href", checker + IP);
     newElement.setAttribute("target", "_blank");
