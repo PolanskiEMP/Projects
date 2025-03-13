@@ -308,4 +308,8 @@ function replaceSessions() {
       .firstElementChild.insertAdjacentElement("afterend", newCellA);
   }
   return true;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f195b59724eb82c2c5c3660af0e51d822343d82f
