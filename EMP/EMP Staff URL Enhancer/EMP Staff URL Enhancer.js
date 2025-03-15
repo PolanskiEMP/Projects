@@ -284,7 +284,7 @@ function replaceSessions() {
     IPCell.appendChild(newCheckIPLinkB);
     // Creates VPN check links
     let newVPNLinkB = Object.assign(document.createElement("a"), {
-      href: URL + IP,
+      href: checker + IP,
       target: "_blank",
       title: "Check VPN",
       textContent: "Check",
@@ -313,7 +313,7 @@ function replaceSessions() {
     IPCell.appendChild(newCheckIPLinkA);
     // Creates VPN check links
     let newVPNLinkA = Object.assign(document.createElement("a"), {
-      href: URL + IP,
+      href: checker + IP,
       target: "_blank",
       title: "Check VPN",
       textContent: "Check",
