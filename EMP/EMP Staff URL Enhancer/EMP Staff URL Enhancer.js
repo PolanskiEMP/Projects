@@ -1,13 +1,14 @@
 // ==UserScript==
 // @name         EMP Staff URL Enhancer
 // @namespace    http://tampermonkey.net/
-// @version      0.2
-// @description  Adds VPN check integration for EMP staff related pages (staffPM, public requests, user history, user sessions)
+// @version      0.3
+// @description  Adds VPN check integration for EMP staff related pages
 // @author       Polanski
 // @match        https://www.empornium.is/staffpm.php*
 // @match        https://www.empornium.is/userhistory.php?*action=*ips*
 // @match        https://www.empornium.is/manage/requests/*
 // @match        https://www.empornium.is/user.php?action=sessions*
+// @match        https://www.empornium.is/tools.php*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=empornium.is
 // @downloadURL  https://raw.githubusercontent.com/PolanskiEMP/Projects/refs/heads/main/EMP/EMP%20Staff%20URL%20Enhancer/EMP%20Staff%20URL%20Enhancer.js
 // @updateURL    https://raw.githubusercontent.com/PolanskiEMP/Projects/refs/heads/main/EMP/EMP%20Staff%20URL%20Enhancer/EMP%20Staff%20URL%20Enhancer.js
@@ -24,7 +25,7 @@ function addObserver() {
         mutation.addedNodes.forEach((node) => {
           if (node.id === "MathJax_Message") {
             console.log("MathJax detected");
-            getSection();
+            get_section();
           }
         });
       }
@@ -34,14 +35,23 @@ function addObserver() {
   observer.observe(document, { childList: true, subtree: true });
 }
 
-function getSection() {
+function get_section() {
   url.includes("staffpm.php")
     ? replaceStaffPM()
     : url.includes("/requests/")
     ? replaceRequest()
     : url.includes("userhistory.php")
     ? replaceHistory()
-    : replaceSessions();
+    : url.includes("action=sessions")
+    ? replaceSessions()
+    : url.includes("security_logs")
+    ? replaceSecurityLogs()
+    : url.includes("login_watch")
+    ? replaceLoginWatch()
+    : () => {
+      console.log("No page detected");
+      return false;
+    }
 
   return true;
 }
@@ -324,6 +334,95 @@ function replaceSessions() {
     rowsA
       .snapshotItem(i)
       .firstElementChild.insertAdjacentElement("afterend", newCellA);
+  }
+  return true;
+}
+
+function replaceSecurityLogs() {
+  console.log("Security Logs page detected");
+
+  const firstIP = document.querySelector("input[id='first_ip']");
+  const lastIP = document.querySelector("input[id='last_ip']");
+  const IPcells = document.querySelectorAll('table.border > tbody > tr:not(:first-child) > td:nth-child(4)');
+
+  var cells = [...IPcells]
+  
+  if (firstIP.checked || lastIP.checked) {
+    const firstIPlist = document.querySelectorAll('table.border > tbody > tr:not(:first-child) > td:nth-child(5)');
+    cells = cells.concat([...firstIPlist]);
+    if (firstIP.checked && lastIP.checked) {
+      const lastIPlist = document.querySelectorAll('table.border > tbody > tr:not(:first-child) > td:nth-child(6)');
+      cells = cells.concat([...lastIPlist]);
+    }
+  }
+
+  
+  
+  for (const cell of cells) {
+    const IP = cell.firstChild.textContent;
+    const IPnode = cell.childNodes[4];
+    IPnode.textContent = "IP";
+    IPnode.setAttribute("target", "_blank");
+    const trackerIP = cell.childNodes[6];
+    trackerIP.textContent = "TR";
+    trackerIP.setAttribute("target", "_blank");
+    const doubleBracket = cell.childNodes[5].cloneNode(false);
+    let newVPNLink = Object.assign(document.createElement("a"), {
+      href: checker + IP,
+      target: "_blank",
+      title: "Check VPN",
+      textContent: "VPN",
+    });
+    cell.insertBefore(doubleBracket, cell.childNodes[cell.childNodes.length - 1]);
+    cell.insertBefore(newVPNLink, cell.childNodes[cell.childNodes.length - 1]);
+  }
+  return true;
+}
+
+function replaceLoginWatch() {
+  console.log("Login Watch page detected");
+
+  const firstIP = document.querySelector("input[name='first_ip']");
+  const lastIP = document.querySelector("input[name='last_ip']");
+  const cells = [];
+  const rowA = document.querySelectorAll("tr[class='rowa'");
+  const rowB = document.querySelectorAll("tr[class='rowb'");
+  const rows = [...rowA].concat([...rowB]);
+  for (let i = 0; i < rows.length; i++) {
+    let cell = rows[i].childNodes[1];
+    cells.push(cell);
+    if (firstIP.checked || lastIP.checked) {
+      let firstIPtd = rows[i].childNodes[3];
+      if (firstIPtd.innerText !== "") {
+        cells.push(firstIPtd);
+      }
+      if (firstIP.checked && lastIP.checked) {
+        let lastIPtd = rows[i].childNodes[5];
+        if (lastIPtd.innerText !== "") {
+          cells.push(lastIPtd);
+        }
+      }
+    }
+    
+  }
+  
+  for (const cell of cells) {
+    const IP = cell.firstChild.textContent;
+    const IPnode = cell.childNodes[4];
+    IPnode.textContent = "IP";
+    IPnode.setAttribute("target", "_blank");
+    const trackerIP = cell.childNodes[6];
+    trackerIP.textContent = "TR";
+    trackerIP.setAttribute("target", "_blank");
+    const doubleBracket = cell.childNodes[5].cloneNode(false);
+    let newVPNLink = Object.assign(document.createElement("a"), {
+      href: checker + IP,
+      target: "_blank",
+      title: "Check VPN",
+      textContent: "VPN",
+    });
+    cell.insertBefore(doubleBracket, cell.childNodes[cell.childNodes.length - 1]);
+    cell.insertBefore(newVPNLink, cell.childNodes[cell.childNodes.length - 1]);
   }
   return true;
 }
